@@ -68,23 +68,22 @@ grid-column 또는 grid-row로 확장 가능
 
 
 
-
-<code>
-    .box2 {
-      /* grid-column: 2 / 4; 동일 */
+```
+`	.box2 {
+       grid-column: 2 / 4; 동일 
       grid-column: 2 / span 2;
     }
     .box4 {
       grid-area: 2 / 1 / 4 / 3;
     }
-</code>
+```
 
 
 
 ### 기타.
 
 - media query
-<code>
+```
 	@media (max-width:600px){
 		.container{
 			grid-template-columns: auto;
@@ -93,22 +92,15 @@ grid-column 또는 grid-row로 확장 가능
         flex-basis: 1rem;
       }
     }
-</code>
- 
+```
+
 의미: 최대 600px까지는 flex direction이 column 더 작아지면 row방향으로 바뀜       
 
 - gap
 layout 사이의 거리를 의미함.       
 
 
-
-
 justify-content
-
-grid-template-columns
-grid-column
-
-flex-basis
 display
 text-shadow
 text-align

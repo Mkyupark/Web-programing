@@ -33,20 +33,19 @@ ID(#사용) -> 고유 식별자 #사용 #id값
 4. [] => attribute selector임
 
 #### CSS 기본 함수
-<code>
-div > li -> 직계 자손들만 적용
+
+```div > li -> 직계 자손들만 적용
 div li -> div로 감싸져있는 li 전부다 의미
-* -> 모든 것에 대한 것을 의미
-div , li-> div와 li에 해당되는 것을 의미
-</code>
+ (*) -> 모든 것에 대한 것을 의미
+div , li-> div와 li에 해당되는 것을 의미```
 
 
 #### emment 기능
 emment란? 자동완성기능을 의미한다.
-<code>
+```
  ex) div>li + tab -> div와 li 생성
  ex) div>ul>li*5 -> div와 ul 밑에 li 5개 생성
  ex) div>ul$*3>li$*3 -> $-> 순서를 생성해줌 ul1, ul2, ul3 // li1 li2 li3
  ex) div.container>ul.character -> div의 css class를 설정해준다.
-</code>
+```
 
