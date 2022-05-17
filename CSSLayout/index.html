@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS grid</title>
+	<style>
+ 	* {
+      margin: 0px;
+      padding: 0px;
+    }
+.container {
+	display:grid;
+	grid-template: 200px 200px 500px/200px 200px 100px 100px;
+}
+ 	.item:nth-child(even) { 
+      background-color: blueviolet;
+    }
+    .item:nth-child(odd) {
+      background-color: coral;
+    }
+    .item {
+      padding: 1rem;
+      text-align: center;
+      text-shadow: 2px 2px 2px gray;
+      color: white;
+    }
+	@media (max-width:600px){
+		.container{
+			grid-template-columns: auto;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item box1">텍스트 1</div>
+		<div class="item box2">텍스트 2</div>
+		<div class="item box3">텍스트 3</div>
+		<div class="item box4">텍스트 4</div>
+		<div class="item box5">텍스트 5</div>
+		<div class="item box6">텍스트 6</div>
+		<div class="item box7">텍스트 7</div>
+		<div class="item box8">텍스트 8</div>
+		<div class="item box9">텍스트 9</div>
+		<div class="item box10">텍스트 10</div>
+	</div>
+</body>
+</html>

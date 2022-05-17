@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	
+*{
+	margin:0px;
+	padding:0px;
+}
+.container{
+	flex-wrap:wrap;
+	display:flex;
+	flex-direction:row;
+	background-color:skyblue;
+	gap: 0.5rem; 
+}
+
+.item:nth-child(even){
+	background-color:blueviolet;
+}
+
+.item:nth-child(odd){
+	background-color:coral;
+}
+.item{
+	flex-grow:3;
+	flew-basis:5rem;
+	padding:1rem;
+	text-align:center;
+	text-shadow:2px 2px 2px gray;
+	color:white;
+}
+@media (max-width: 600px){
+	.container{
+		flex-direction:column;
+	}
+	.item{
+		flex-basis:1rem;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item box1">텍스트</div>
+		<div class="item box2">텍스트</div>
+		<div class="item box3">텍스트</div>
+		<div class="item box4">텍스트</div>
+		<div class="item box5">텍스트</div>
+		<div class="item box6">텍스트</div>
+		<div class="item box7">텍스트</div>
+		<div class="item box8">텍스트</div>
+		<div class="item box9">텍스트</div>
+		<div class="item box10">텍스트</div>
+	</div>
+</body>
+</html>

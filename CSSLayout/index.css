@@ -1,0 +1,23 @@
+.soccerplayer{
+	width: 100%;
+	border-collapse:collapse;
+}
+.soccerplayer :is(td,th){
+	border: 1px solid gray;
+	padding:0.25rem;
+	text-align:center;
+}
+.soccerplayer tr:nth-child(even){
+	background-color:lightgray;
+}
+
+.soccerplayer tr:hover{
+	background-color:beige;
+}
+.soccerplayer th{
+	background-color: blueviolet;
+	color:white;
+}
+.soccerplayer img{
+	vertical-align:bottom;
+}
