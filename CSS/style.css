@@ -1,0 +1,19 @@
+h2{
+	color:yellowgreen;
+	background-color:red;
+}
+li{
+	background-color:#FFFDCD;
+	color:#E7846D;
+}
+
+div> ul{
+	background-color:#850C11;
+}
+
+div{
+	background-color:#E97679;
+}
+body{
+	background-color:rgba(231,132,109,0.2);
+}
