@@ -27,8 +27,8 @@ form에서는 type이 중요함.
 	3. pattern -> input의 형식을 지정해주는 것
 	4. value-> 기본적으로 입력값이 더해주는 경우
 	
-```<input type="tel" name="phone" placeholder="010-0000-0000" pattern="01[0-9]-[0-9]{4}-[0-9]{4}"/>```
-```<input type="text" name="search_query" value="노래방+"/><br/>```
+```<input type="tel" name="phone" placeholder="010-0000-0000" pattern="01[0-9]-[0-9]{4}-[0-9]{4}"/>
+<input type="text" name="search_query" value="노래방+"/><br/>```
 
 - action
 form의 데이터를 보내는 주소를 입력
