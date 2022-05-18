@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Form 학습</title>
+	<style>
+		html,body{
+			margin:0px;
+			padding:0px;
+		}
+		h3{
+			margin:0px;
+			padding:1rem;
+			max-width:100%;
+			background-color:blueviolet;
+			color:white;
+		}
+		.todo{
+			max-width:100%;
+			padding:1rem;
+			background-color:beige;
+		}
+		input, label{
+			width:15rem;
+		}
+		input[type="submit"]{
+			border-radius:2rem;
+		}
+	
+	</style>
+</head>
+<body>
+	<h3>ToDo</h3>
+	<div class="todo">
+		<form action ="#">
+		<label>할일: </label> <br/>
+		<input type="text" name="title"/><br/>
+		<br/>
+		<label>날짜: </label><br/>
+		<input type="datetime-local" name="day"/><br/>
+		<label>컬러:</label><br/>
+		<input type="color" name="display"/><br/>
+		<label>종류:</label><br/>
+		<input type="text" list="category" name="kind"/><br/>
+		<datalist id="category">
+			<option value="가족행사"/>
+			<option value="가족 구성원 관련"/>
+			<option value="친구"/>
+			<option value="학교 행사"/>
+			<option value="수업 관련"/>
+		</datalist> <br/>
+		
+    	<input type="submit" value="제출"/>
+		
+			
+  		</form>
+		
+	</div>
+
+</body> 
+</html>
+
+	<!-- <label>email:</label> <br/>
+	<input type="email" name="email" placeholder="m_kyu@github.com"/> <br/>
+	<label>전화번호: (형식:010-0000-0000)</label><br/>
+	<input type="tel" name="phone" placeholder="010-0000-0000" pattern="01[0-9]-[0-9]{4}-[0-9]{4}"/> <br/>
+	   -->

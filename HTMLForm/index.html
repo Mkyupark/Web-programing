@@ -3,13 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <title>Input Form 학습</title>
+	<style>
+		html,body{
+			margin:0px;
+			padding:0px;
+		}
+		h3{
+			margin:0px;
+			padding:1rem;
+			max-width:100%;
+			background-color:blueviolet;
+			color:white;
+		}
+		.todo{
+			max-width:100%;
+			padding:1rem;
+			background-color:beige;
+		}
+		input, label, textarea{
+			width:15rem;
+		}
+		input[type="submit"]{
+			border-radius:2rem;
+		}
+		:is(.radio, .checkbox) input{
+			width:1rem;
+		}
+	
+	</style>
 </head>
 <body>
-  <form>
-    <label>이름:
-      <input name="name">
-    </label>
-    <input type="submit" value="제출">
-  </form>
-</body>
+	<h3>ToDo</h3>
+	<div class="todo">
+		<form action ="#">
+		<label>할일: </label> <br/>
+		<input type="text" name="title"/><br/>
+		<br/>
+		<label>날짜: </label><br/>
+		<input type="datetime-local" name="day"/><br/>
+		<label>컬러:</label><br/>
+		<input type="color" name="display"/><br/>
+		<label>종류:</label><br/>
+		<input type="text" list="category" name="kind"/><br/>
+		<datalist id="category">
+			<option value="가족행사"/>
+			<option value="가족 구성원 관련"/>
+			<option value="친구"/>
+			<option value="학교 행사"/>
+			<option value="수업 관련"/>
+		</datalist>	<br/>
+		<label>중요도:</label><br/>
+      <div class="radio importance">
+        <div>
+          <input type="radio" name="importance" value="veryhigh">
+          <label for="veryhigh">매우 중요</label>
+        </div>
+        <div>
+          <input type="radio" name="importance" value="high">
+          <label for="high">중요</label>
+        </div>
+        <div>
+          <input type="radio" name="importance" value="normal">
+          <label for="normal">보통</label>
+        </div>
+        <div>
+          <input type="radio" name="importance" value="trivia">
+          <label for="trivia">사소</label>
+        </div>
+      </div>
+		<label>알람:</label><br/>
+            <div class="checkbox alarm">
+        <div>
+          <input type="checkbox" name="alarm" value="month">
+          <label for="month">한달전</label>
+        </div>
+        <div>
+          <input type="checkbox" name="alarm" value="week">
+          <label for="week">일주일전</label>
+        </div>
+        <div>
+          <input type="checkbox" name="alarm" value="day">
+          <label for="day">하루전</label>
+        </div>
+        <div>
+          <input type="checkbox" name="alarm" value="hour">
+          <label for="hour">한시간전</label>
+        </div>
+      </div>   
+      <label>메모:</label><br/>
+      <textarea name="memo" rows="10"></textarea><br/>
+      <label>패스워드:</label><br/>
+      <input type="password" name="pwd"/><br/>
+      <br/>
+      <br/>
+    	<input type="submit" value="제출"/>
+  		</form>
+	</div>
+
+</body> 
 </html>
+
+	<!-- <label>email:</label> <br/>
+	<input type="email" name="email" placeholder="m_kyu@github.com"/> <br/>
+	<label>전화번호: (형식:010-0000-0000)</label><br/>
+	<input type="tel" name="phone" placeholder="010-0000-0000" pattern="01[0-9]-[0-9]{4}-[0-9]{4}"/> <br/>
+	   -->
